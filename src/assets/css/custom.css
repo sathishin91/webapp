@@ -1765,3 +1765,30 @@ a:hover.back-to-top {
 .mx-auto {
   margin-left: auto !important;
 }
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --bs-gutter-x: 4.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.carousel-control-prev {
+  left: -7em;
+}
+
+.carousel-control-next {
+  right: -6em;
+}
+/* .carousel-indicators {
+  display: none;
+} */
