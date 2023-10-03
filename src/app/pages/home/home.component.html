@@ -354,3 +354,194 @@
 </div>
 <!-- end of cards-1 -->
 <!-- end of features -->
+
+<!-- Details 1 -->
+<div id="details" class="basic-1 bg-dark-blue">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-7">
+        <div class="image-container">
+          <img
+            class="img-fluid"
+            src="../../../assets/images/details-1.jpg"
+            alt="alternative"
+          />
+        </div>
+        <!-- end of image-container -->
+      </div>
+      <!-- end of col -->
+      <div class="col-lg-6 col-xl-5">
+        <div class="text-container">
+          <h2>Prototype With Revo</h2>
+          <p>
+            Our experienced designers and developers have implemented cutting
+            edge tools that will help you sketch your ideas in record time and
+            prepare the design
+          </p>
+          <ul class="list-unstyled li-space-lg">
+            <li class="media">
+              <i class="fas fa-square"></i>
+              <div class="media-body">
+                <strong>Use a single app</strong> to get from sketch to actual
+                code
+              </div>
+            </li>
+            <li class="media">
+              <i class="fas fa-square"></i>
+              <div class="media-body">
+                <strong>Bundled templates</strong> to help you get inspired
+                faster
+              </div>
+            </li>
+          </ul>
+          <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox"
+            >LIGHTBOX</a
+          >
+        </div>
+        <!-- end of text-container -->
+      </div>
+      <!-- end of col -->
+    </div>
+    <!-- end of row -->
+  </div>
+  <!-- end of container -->
+</div>
+<!-- end of basic-1 -->
+<!-- end of details 1 -->
+
+<!-- Details 2 -->
+
+<div class="tabs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-xl-5">
+        <ul
+          class="nav nav-tabs"
+          id="revoTabs"
+          ngbNav
+          #nav="ngbNav"
+          [(activeId)]="active"
+        >
+          <li class="nav-item" [ngbNavItem]="1">
+            <a
+              ngbNavLink
+              class="nav-link"
+              id="nav-tab-1"
+              data-toggle="tab"
+              href="#tab-1"
+              role="tab"
+              aria-controls="tab-1"
+              aria-selected="true"
+              >PROTOTYPE</a
+            >
+            <!-- <button ngbNavLink>PROTOTYPE</button> -->
+            <ng-template ngbNavContent>
+              <p>
+                <strong>Our goal is to empower</strong> web designers and
+                developers reach their full potential and help them get their
+                designs from layouts to code in the shortest amount of time.
+              </p>
+              <p>
+                <strong>Design and layouts</strong> are the main focus of our
+                apps but we also work on export-to-code functionalities.
+              </p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    It's a fun and captivating endeavour that we love
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    We're passionate about our work and it shows
+                  </div>
+                </li>
+              </ul>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="2">
+            <button ngbNavLink>DESIGN</button>
+            <ng-template ngbNavContent>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <div class="media-bullet">1.</div>
+                  <div class="media-body">
+                    <strong>Speed</strong> is important for our users so we
+                    invest a lot of time and resources to make everything work
+                    faster
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-bullet">2.</div>
+                  <div class="media-body">
+                    <strong>Reliability</strong> is what we're focused on
+                    achieving besides speed because we want our app to work all
+                    the time
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-bullet">3.</div>
+                  <div class="media-body">
+                    <strong>Standards</strong> are another factor that we take
+                    into consideration when developing our tools
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-bullet">4.</div>
+                  <div class="media-body">
+                    <strong>Performance</strong> is a key factor for our desktop
+                    apps
+                  </div>
+                </li>
+              </ul>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="3">
+            <button ngbNavLink>EXPORT</button>
+            <ng-template ngbNavContent>
+              <p>
+                <strong>Our goal is to empower</strong> web designers and
+                developers reach their full potential and help them get their
+                designs from layouts to code in the shortest amount of time.
+              </p>
+              <p>
+                <strong>Design and layouts</strong> are the main focus of our
+                apps but we also work on export-to-code functionalities.
+              </p>
+              <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    It's a fun and captivating endeavour that we love
+                  </div>
+                </li>
+                <li class="media">
+                  <i class="fas fa-square"></i>
+                  <div class="media-body">
+                    We're passionate about our work and it shows
+                  </div>
+                </li>
+              </ul>
+            </ng-template>
+          </li>
+        </ul>
+
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      </div>
+      <div class="col-lg-6 col-xl-7">
+        <div class="image-container">
+          <img
+            class="img-fluid"
+            src="../../../assets/images/details-2.jpg"
+            alt="alternative"
+          />
+        </div>
+        <!-- end of image-container -->
+      </div>
+      <!-- end of col -->
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
