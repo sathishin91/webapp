@@ -49,9 +49,6 @@ export class NavbarComponent {
     } else {
       this.activeSectionId = null;
     }
-
-    console.log('Active Section ID:', this.activeSectionId); // Debugging
-    console.log('scrollY:', scrollY);
   }
 
   ngOnInit(): void {}

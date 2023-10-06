@@ -1792,3 +1792,20 @@ a:hover.back-to-top {
 /* .carousel-indicators {
   display: none;
 } */
+
+.media-body {
+  -ms-flex: 1;
+  flex: 1;
+}
+li-space-lg li {
+  margin-bottom: 0.5rem;
+}
+.media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.list-unstyled .media-body {
+  margin-left: 0.5rem;
+}
